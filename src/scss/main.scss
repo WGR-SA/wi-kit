@@ -1,0 +1,24 @@
+// Config
+@import 'base/_root';
+@import 'base/_fonts';
+@import 'base/_mixins';
+@import 'base/_animations';
+
+// Elements (mixins) check files for vars
+@import 'elements/_buttons';
+@import 'elements/_input';
+
+// Components
+@import 'components/_header';
+@import 'components/_footer';
+@import 'components/_section';
+@import 'components/_article';
+
+button {
+  @include button;
+}
+
+input,
+textarea {
+  @include input;
+}

@@ -1,0 +1,38 @@
+@mixin container($padding: var(--spacer-4), $width: 1700px) {
+  max-width: $width;
+  margin: 0 auto;
+  padding: 0 $padding;
+}
+
+@mixin row($colCount: 3, $gap: 0) {
+  display: grid;
+  grid-template-columns: repeat($colCount, 1fr);
+  grid-gap: $gap;
+  grid-auto-rows: auto;
+  grid-auto-flow: dense;
+
+  @media (max-width: $b--l) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  @media (max-width: $b--m) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
+
+@mixin fullBackground($background) {
+  &:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 200vw;
+    height: 100%;
+    transform: translateX(-50vw);
+    background: $background;
+  }
+
+  >* {
+    position: relative;
+    z-index: 2;
+  }
+}

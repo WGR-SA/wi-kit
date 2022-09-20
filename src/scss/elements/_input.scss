@@ -1,0 +1,22 @@
+// Don't modifiy this file directly, use the main.scss file instead
+input, textarea {
+  --background: var(--c-white);
+  --color: var(--c-black);
+  --border: 1px solid var(--c-grey);
+  --border-radius: var(--spacer-025);
+
+  display: block;
+  width: 100%;
+  padding: var(--spacer-025) var(--spacer-05);
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+  color: var(--color);
+  background-color: var(--background);
+  background-clip: padding-box;
+  border: var(--border);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  border-radius: var(--border-radius);
+}

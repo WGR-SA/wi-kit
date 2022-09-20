@@ -1,0 +1,17 @@
+// Don't modifiy this file directly, use the main.scss file instead
+@mixin button {
+  --background: var(--color-text);
+  --color: var(--color-background);
+  --border: 0px;
+  --border-radius: 0px;
+
+  margin: var(--spacer-1) 0; 
+  padding: var(--spacer-05) var(--spacer-1);
+  background: var(--background);
+  color: var(--color);
+  border: var(--border);
+  border-radius: var(--border-radius);
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
