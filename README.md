@@ -1,10 +1,7 @@
-#W(awad)I Kit
+# W(awad)I Kit
 
-##Install
-- Run `npm i @wgr-sa/wi-kit`
+## Install
 
-##Init
-- Run `npx wi-kit-init`
-
-##Update elements
-- Run `npx wi-kit-update`
+- Run `npm i @wgr-sa/wi-kit`.
+- Use `npm explore @wgr-sa/wi-kit -- npm run init` to copy folders & files structure.
+- Use `npm explore @wgr-sa/wi-kit -- npm run update` to update mixins elements
