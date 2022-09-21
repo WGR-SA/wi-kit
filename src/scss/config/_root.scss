@@ -72,7 +72,7 @@ address {
   font-style: normal;
 }
 
-@media (max-width: $--xl) {
+@media (max-width: $b--xl) {
 
   :root {
     --spacer-1: 1rem;
@@ -82,7 +82,7 @@ address {
   }
 }
 
-@media (max-width: $--l) {
+@media (max-width: $b--l) {
 
   :root {
     --spacer-1: 1rem;
