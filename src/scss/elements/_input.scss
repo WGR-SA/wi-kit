@@ -1,5 +1,5 @@
 // Don't modifiy this file directly, use the main.scss file instead
-input, textarea {
+@mixin input {
   --background: var(--c-white);
   --color: var(--c-black);
   --border: 1px solid var(--c-grey);
