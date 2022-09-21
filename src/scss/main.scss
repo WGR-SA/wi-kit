@@ -1,8 +1,8 @@
 // Config
-@import 'base/_root';
-@import 'base/_fonts';
-@import 'base/_mixins';
-@import 'base/_animations';
+@import 'config/_root';
+@import 'config/_fonts';
+@import 'config/_mixins';
+@import 'config/_animations';
 
 // Elements (mixins) check files for vars
 @import 'elements/_buttons';
