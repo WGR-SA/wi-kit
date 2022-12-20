@@ -1,4 +1,4 @@
-// Don't modifiy this file directly, use the main.scss file instead
+// Don't modifiy this file directly, apply this mixin to html tag or class
 @mixin input {
   --background: var(--c-white);
   --color: var(--c-black);
@@ -19,4 +19,9 @@
   -moz-appearance: none;
   appearance: none;
   border-radius: var(--border-radius);
+}
+
+input,
+textarea {
+  @include input;
 }

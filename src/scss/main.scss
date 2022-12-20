@@ -4,8 +4,9 @@
 @import 'config/_mixins';
 @import 'config/_animations';
 
-// Elements (mixins) check files for vars
+// Elements 
 @import 'elements/_button';
+@import 'elements/_details';
 @import 'elements/_input';
 
 // Components
@@ -14,11 +15,9 @@
 @import 'components/_section';
 @import 'components/_article';
 
-button {
-  @include button;
-}
+// Layouts
+@import 'layout/_default';
 
-input,
-textarea {
-  @include input;
-}
+
+
+

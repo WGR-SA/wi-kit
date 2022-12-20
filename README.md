@@ -1,4 +1,4 @@
-# W(awad)I Kit
+# WI Kit
 
 ## Install
 

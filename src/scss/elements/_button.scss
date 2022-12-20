@@ -1,4 +1,4 @@
-// Don't modifiy this file directly, use the main.scss file instead
+// Don't modifiy this file directly, apply this mixin to html tag or class
 @mixin button {
   --background: var(--color-text);
   --color: var(--color-background);
@@ -15,3 +15,8 @@
   -moz-appearance: none;
   appearance: none;
 }
+
+button, .button {
+  @include button;
+}
+
