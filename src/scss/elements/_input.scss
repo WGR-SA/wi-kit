@@ -3,11 +3,11 @@
   --background: var(--c-white);
   --color: var(--c-black);
   --border: 1px solid var(--c-grey);
-  --border-radius: var(--spacer-025);
+  --border-radius: 0.25rem;
 
   display: block;
   width: 100%;
-  padding: var(--spacer-025) var(--spacer-05);
+  padding: 0.25rem 0.5rem;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
