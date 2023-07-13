@@ -1,1 +1,98 @@
 // Import fonts files, mixins style and set tags style
+@font-face {
+  font-family: 'Inter';
+  font-style: oblique 0deg 1deg;
+  font-weight: 100 900;
+  font-display: swap;
+  src: url('/fonts/Inter.var.woff2?v=3.19') format('woff2');
+}
+
+@mixin h1 {
+  font-size: 2.5rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+h1 {
+  @include h1();
+}
+
+@mixin h2 {
+  font-size: 2rem;
+  line-height: 3.5rem;
+  font-weight: 700;
+}
+
+h2 {
+  @include h2();
+}
+
+@mixin h3 {
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  font-weight: 700;
+}
+
+h3 {
+  @include h3;
+}
+
+@mixin h4 {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+
+h4 {
+  @include h4;
+}
+
+@mixin h5 {
+  line-height: 1.1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+h5 {
+  @include h5;
+}
+
+@mixin p {
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-weight: 400;
+}
+
+@mixin lead {
+  font-size: 1.25rem;
+  line-height: 1.85rem;
+  font-weight: 300;
+}
+
+@mixin small {
+  line-height: 1.1rem;
+  font-size: 0.75rem;
+}
+
+p {
+
+  margin: 1rem 0;
+
+  @include p();
+
+  &.lead {
+    @include lead();
+  }
+
+  &:has(small),
+  small {
+    @include small();
+  }
+}
+
+figcaption {
+  @include small();
+  font-style: italic;
+  text-align: center;
+  margin: 0.5rem 0 1rem;
+}

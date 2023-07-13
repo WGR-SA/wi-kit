@@ -1,11 +1,11 @@
 .card {
-  --background: var(--color-background);
+  --background: var(--c-grey-light);
   --color: var(--color-text);
   --border: 0px;
-  --border-radius: 0px;
+  --border-radius: var(--element-radius);
   --padding: var(--spacer-2);
 
-  margin: 0.5rem 0 1rem;
+  margin: 0 0 1rem;
   padding: var(--padding);
   background: var(--background);
   color: var(--color);

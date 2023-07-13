@@ -1,0 +1,8 @@
+select {
+  @include input;
+
+  &:after {
+    content: '';
+
+  }
+}

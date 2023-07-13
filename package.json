@@ -1,11 +1,12 @@
 {
   "name": "@wgr-sa/wi-kit",
-  "version": "0.0.5",
+  "version": "0.1.0",
   "license": "MIT",
   "type": "module",
   "scripts": {
     "init": "copyfiles -u 1 \"./src/**/*.scss\" \"../../../assets\"",
-    "update": "copyfiles -u 1 \"./src/scss/elements/*.scss\" \"../../../assets\""
+    "update": "copyfiles -u 1 \"./src/scss/elements/*.scss\" \"../../../assets\"",
+    "build": "node index.js"
   },
   "dependencies": {
     "copyfiles": "^2.4.1",
